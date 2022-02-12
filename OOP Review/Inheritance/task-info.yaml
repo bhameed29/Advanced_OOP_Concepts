@@ -3,7 +3,7 @@ files:
 - name: src/Shape.java
   visible: true
   placeholders:
-  - offset: 243
+  - offset: 309
     length: 105
     placeholder_text: '/* TODO : Implement a constructor that takes in a String as
       parameter and sets the name of this object.*/'
@@ -12,7 +12,7 @@ files:
       offset: 243
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: public Shape(String name){this.setName(name);}
   text: |
     public class Shape {
@@ -52,8 +52,8 @@ files:
 - name: src/Square.java
   visible: true
   placeholders:
-  - offset: 0
-    length: 155
+  - offset: 16
+    length: 692
     placeholder_text: |-
       /* TODO : Complete the Square class.
        Add variables if you need.
@@ -63,8 +63,8 @@ files:
       length: 155
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |
       public class Square extends Shape{
           double side;
@@ -155,5 +155,8 @@ files:
       }
     }
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 12 Feb 2022 06:44:15 UTC
 record: -1

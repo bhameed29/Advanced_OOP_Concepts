@@ -41,7 +41,5 @@ public class Person {
         return birthYear;
     }
 
-    public void setBirthYear(int birthYear) {
-        this.birthYear = birthYear;
-    }
+    public void setBirthYear(int birthYear) {this.birthYear = birthYear;}
 }

@@ -18,7 +18,7 @@ files:
       ((ChildPatient)bart).setTemperature(101.2);
               maggie.setTemperature(100.1);
               lisa.setTemperature(100.6);
-  - offset: 581
+  - offset: 706
     length: 120
     placeholder_text: |-
       /* TODO */
@@ -35,8 +35,8 @@ files:
               homer.addJob("Major");
               homer.addJob("Bar Owner");
               marge.addJob("House Keeper");
-  - offset: 771
-    length: 115
+  - offset: 1040
+    length: 295
     placeholder_text: |-
       /* TODO */
       Insert the Simpsons in the Patients' array: in the following order:
@@ -45,7 +45,7 @@ files:
       length: 115
       offset: 771
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       this.patients[0] = bart;
@@ -198,10 +198,10 @@ files:
       length: 95
       offset: 60
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: '    default boolean hasFever(){return this.getTemperature()>100.4;}'
-  - offset: 238
+  - offset: 390
     length: 121
     placeholder_text: "/* TODO */\nDecleare two setters. One for systolic and one\
       \ for diastolic. \nCheck the getters to infer the parameter types."
@@ -209,7 +209,7 @@ files:
       length: 121
       offset: 238
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |2-
           void setSystolic(int s);
@@ -235,14 +235,14 @@ files:
   visible: true
   placeholders:
   - offset: 54
-    length: 119
+    length: 840
     placeholder_text: "/* TODO */\nImplement the class Adult Patient. \nAn adult patient\
       \ is a Person that is Diagnosable and that is Employable."
     initial_state:
       length: 119
       offset: 54
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |2
        extends Person implements Diagnosable,Employable{
