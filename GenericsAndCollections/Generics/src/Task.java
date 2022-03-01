@@ -1,8 +1,11 @@
-public class Task {
-    public static void main(String[] args){
+public class Task
+{
+    public static void main(String[] args)
+    {
         Bag<Integer> numbers = new Bag<>();
         Bag<BingoChip> bingo = new Bag<>();
-        try {
+        try
+        {
             numbers.add(1);
             numbers.add(2);
             numbers.add(2);
@@ -18,10 +21,6 @@ public class Task {
 
             System.out.println("Draw a bingo chip");
             System.out.println(bingo.drawOne());
-        }catch(BagException e){
-            e.printStackTrace();
-        }
-
+        }catch(BagException e) {e.printStackTrace();}
     }
-
 }

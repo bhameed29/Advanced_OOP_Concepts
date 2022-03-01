@@ -3,7 +3,7 @@ files:
 - name: src/Task.java
   visible: true
   placeholders:
-  - offset: 1100
+  - offset: 1123
     length: 150
     placeholder_text: |-
       /* TODO
@@ -13,7 +13,7 @@ files:
       offset: 1100
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '  Counter<String> words = new Counter<>(text.split("
       ")'
   text: |-
@@ -72,7 +72,7 @@ files:
 - name: src/Counter.java
   visible: true
   placeholders:
-  - offset: 94
+  - offset: 404
     length: 95
     placeholder_text: "/* TODO \nThe HashMap should accomodate a generic class for\
       \ the keys and Integer for the value*/"
@@ -81,9 +81,9 @@ files:
       offset: 94
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: <E,Integer>
-  - offset: 231
+  - offset: 541
     length: 202
     placeholder_text: |-
       /* TODO
@@ -95,12 +95,12 @@ files:
       offset: 231
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "        counts = new HashMap<>();\n        for(E element:things){\n\
       \            if(counts.containsKey(element)) {\n                counts.put(element,counts.get(element)+1);\n\
       \            } else {\n                counts.put(element,1);\n            }\n\
       \       "
-  - offset: 489
+  - offset: 799
     length: 143
     placeholder_text: "/* TODO \nThis just returns the specific count for an element.\
       \ It is a wrapper\nfor a getting the value of the HashMap given the key \"element\"\
@@ -110,9 +110,9 @@ files:
       offset: 489
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '  return counts.get(element'
-  - offset: 737
+  - offset: 1047
     length: 55
     placeholder_text: "/* TODO \nReturns the most frequent key in the HashMap*/"
     initial_state:
@@ -120,7 +120,7 @@ files:
       offset: 737
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       {
               int max=0;
@@ -146,5 +146,8 @@ files:
     \    }\n\n    public E mostFrequent()/* TODO \nReturns the most frequent key in\
     \ the HashMap*/t;\n    }\n}\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 01 Mar 2022 06:29:13 UTC
 record: -1
