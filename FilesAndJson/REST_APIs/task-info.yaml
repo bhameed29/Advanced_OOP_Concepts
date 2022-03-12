@@ -160,7 +160,7 @@ files:
 - name: src/TVShowsDatabase.java
   visible: true
   placeholders:
-  - offset: 415
+  - offset: 791
     length: 241
     placeholder_text: |-
       Create a method getURLSource that returns a String and gets a URL object as a parameter. It should also throw an exception.
@@ -170,7 +170,7 @@ files:
       offset: 415
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |2-
           public String getURLSource(URL url) throws IOException{
               // This is like reading from the keyboard...
@@ -184,8 +184,8 @@ files:
               scan.close();
               return "{\"result\":"+result+"}";
           }
-  - offset: 840
-    length: 166
+  - offset: 1216
+    length: 167
     placeholder_text: "/* TODO \nYou have to use the url to retrieve the contents\
       \ of the website. \nThis will be a String, but in JSON format. Use the auxiliary\
       \ function you created above. */"
@@ -194,9 +194,9 @@ files:
       offset: 840
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '        String result = getURLSource(url);'
-  - offset: 1022
+  - offset: 1399
     length: 44
     placeholder_text: "/* TODO \nRemember to return a JSON object.*/"
     initial_state:
@@ -204,19 +204,19 @@ files:
       offset: 1022
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject())
-  - offset: 1217
-    length: 43
+  - offset: 1593
+    length: 44
     placeholder_text: "/* TODO \nFill in this data type (Object) */"
     initial_state:
       length: 43
       offset: 1217
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: URL
-  - offset: 1271
+  - offset: 1648
     length: 41
     placeholder_text: |-
       /* TODO
@@ -226,9 +226,9 @@ files:
       offset: 1271
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: URL
-  - offset: 1349
+  - offset: 1726
     length: 52
     placeholder_text: |-
       /* TODO
@@ -239,9 +239,9 @@ files:
       offset: 1349
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: ' String result = getURLSource(url);'
-  - offset: 1417
+  - offset: 1794
     length: 42
     placeholder_text: "/* TODO \nreturn the appropriate result.\n*/"
     initial_state:
@@ -249,10 +249,10 @@ files:
       offset: 1417
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: (JsonObject) Jsoner.deserialize(result, new JsonObject());
-  - offset: 1559
-    length: 207
+  - offset: 1936
+    length: 206
     placeholder_text: "/* TODO \nThis should return a String with each show in four\
       \ fields:\nName:the name of the show\nLink:the link to the show\nrating average:The\
       \ rating average of teh show, and \nsummary, the summary of the show.*/"
@@ -261,7 +261,7 @@ files:
       offset: 1559
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       JsonArray shows = (JsonArray) doc.get("result");
               for(Object r : shows){
@@ -272,7 +272,7 @@ files:
                   results += "Rating average:"+(BigDecimal)((JsonObject)obj.get("rating")).get("average")+"\n";
                   results += "Summary:"+(String)obj.get("summary")+"\n";
               }
-  - offset: 1862
+  - offset: 2237
     length: 116
     placeholder_text: "/* TODO\nGiven a String with some text in it, write that text\
       \ to a file. \nThe name of the file is given in outfile */"
@@ -281,7 +281,7 @@ files:
       offset: 1862
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       try(DataOutputStream out = new DataOutputStream(new FileOutputStream(outfile))){
                   out.writeBytes(text);
@@ -315,5 +315,8 @@ files:
     \ some text in it, write that text to a file. \nThe name of the file is given\
     \ in outfile */\n    }\n\n}\n"
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 12 Mar 2022 04:05:48 UTC
 record: -1
